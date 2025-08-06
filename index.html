@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <!-- Link to your CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Google Fonts (Optional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo"><a href="#">Portfolio</div>
+      <ul class="nav-menu">
+        <li><a class="nav-link" href="#hero">Home</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#skills">Skills</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" onclick="document.querySelector('.nav-menu').classList.toggle('active')">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-container">
+      <div>
+        <h1 class="hero-title">Hi, I'm <span class="highlight">Priyanshu Singh</span></h1>
+        <h2 class="hero-subtitle">Frontend Developer</h2>
+        <p class="hero-description">I love building beautiful and responsive websites using modern web technologies.</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="img.jpg" alt="Profile Image" class="profile-image">
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-image">
+          <img src="img.jpg" alt="About Image" class="about-profile">
+        </div>
+        <div class="about-text">
+          <h3>Hello! I'm Priyanshu</h3>
+          <p>I’m a passionate frontend developer with experience in creating user-friendly, responsive websites using HTML, CSS, JavaScript, and React.js. I enjoy turning complex problems into simple, beautiful, and intuitive designs.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number">10+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">2</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Dedication</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">💻</div>
+          <h3>HTML/CSS</h3>
+          <p>Responsive web design with modern layouts.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">⚙️</div>
+          <h3>JavaScript</h3>
+          <p>Interactive UI and dynamic functionality.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">⚛️</div>
+          <h3>React.js</h3>
+          <p>Component-based frontend development.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="img2.png" alt="Project 1">
+          </div>
+          <div class="project-content">
+            <h3>Quiz App</h3>
+            <p>A Quiz application using Quiz API with modern UI.</p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://priyanshu100704.github.io/quiz_app/" class="project-link">Live Demo</a>
+              <a href="https://github.com/Priyanshu100704/quiz_app" class="project-link">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more projects similarly -->
+      </div>
+    </div>
+
+
+    <!-- Resume Section -->
+<section class="resume" id="resume">
+  <div class="container">
+    <h2 class="section-title">Resume</h2>
+
+    <!-- Education -->
+    <div class="resume-block">
+      <h3>🎓 Education</h3>
+      <p><strong>Bachelor of Computer Applications (BCA)</strong> | 2022–2025</p>
+      <p>Integral Innovative Sustainable Education, Kalyanpur, Lucknow, Uttar Pradesh</p>
+      <p><em>Relevant coursework:</em> Operating System, DSA, OOPs, DBMS, Computer Networking</p>
+    </div>
+
+    <!-- Skills -->
+    <div class="resume-block">
+      <h3>💻 Skills</h3>
+      <ul>
+        <li><strong>Programming Languages:</strong> Java, C</li>
+        <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
+        <li><strong>Tools:</strong> Git, GitHub, Visual Studio Code</li>
+        <li><strong>Soft Skills:</strong> Presentation, Planning, Creative Problem Solving, Teamwork, Active Listening, Adaptability, Analytical Thinking</li>
+      </ul>
+    </div>
+
+    <!-- Projects -->
+    <div class="resume-block">
+      <h3>🚀 Projects</h3>
+      <ul>
+        <li><strong>Weather App:</strong> Real-time weather using OpenWeatherMap API</li>
+        <li><strong>Quiz App:</strong> Dynamic quiz features with JavaScript functions</li>
+        <li><strong>To-Do List:</strong> Interactive list with basic JS functionality</li>
+      </ul>
+    </div>
+
+    <!-- Languages -->
+    <div class="resume-block">
+      <h3>🗣 Languages</h3>
+      <ul>
+        <li>Hindi (Native)</li>
+        <li>English (Proficient)</li>
+      </ul>
+    </div>
+
+    <!-- Achievements & Activities -->
+    <div class="resume-block">
+      <h3>🏅 Achievements & Activities</h3>
+      <ul>
+        <li>Developed comprehensive projects using development concepts</li>
+        <li>Member of College’s Cricket Team</li>
+      </ul>
+    </div>
+
+    <!-- Resume Download Button -->
+    <div class="resume-download">
+      <a href="resume.png" download class="btn btn-primary">📥 Download Resume</a>
+    </div>
+  </div>
+</section>
+
+
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact Me</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>Let's Connect</h3>
+          <p>Feel free to reach out for collaborations or just a friendly hello 👋</p>
+          <div class="contact-details">
+            <div class="contact-item"><i class="fas fa-envelope"></i> thakurpriyan6328email.com</div>
+            <div class="contact-item"><i class="fas fa-phone"></i> +91 7235057405</div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-link">LinkedIn</a>
+            <a href="#" class="social-link">GitHub</a>
+            <a href="#" class="social-link">Twitter</a>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="Your Email">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Priyanshu Singh. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Font Awesome for icons -->
+  <script src="script.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
